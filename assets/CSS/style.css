@@ -1,0 +1,65 @@
+
+.cor1{
+    font-size: 20pt;
+    color: rgb(255, 255, 255);
+}
+.cor2{
+    font-size: 20pt;
+    color: rgb(255, 255, 255);
+}
+.cor3{
+    font-size: 20pt;
+    color: rgb(255, 255, 255);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menu li{
+    display: inline;
+    margin: 15pt;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15pt;
+}
+
+#menu li a:hover{
+    color:dimgrey;
+}
+
+.padding{
+    padding: 12pt;
+}
+
+.conteudo{
+    border-radius: 5%;
+}
+
+.dimensoes{
+    width: 360px;
+    height: 360px;
+}
+
+.container-logo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo{
+    width: 30px;
+    height: 30px;
+}
+
+.margem-rodape{
+    margin-bottom: 15px;
+}
+
