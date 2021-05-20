@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,40 +8,40 @@
     <title>Contato</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
+
+
 <body style="background-color: rgb(20, 20, 20);">
     <ul id="menu">
         <li>
             <a href="index.html">
-                <img class="container-logo logo padding" src="assets/img/home.png" alt="logo home">
-                Home
+                <img class="container-logo logo padding" src="assets/img/home.png" alt="logo home"> Home
             </a>
         </li>
         <li>
             <a href="contato.html">
-                <img class="container-logo logo padding" src="assets/img/telefone.png" alt="logo telefone">
-                Contato
+                <img class="container-logo logo padding" src="assets/img/telefone.png" alt="logo telefone"> Contato
             </a>
         </li>
     </ul>
 
     <div class="container">
         <h1 style="color: green;">
-                Entre em contato comigo:
+            Entre em contato comigo:
         </h1>
         <form style="color: white;">
             <label for="nome">Nome:</label> <br>
-            <input type="text" id="nome">
-            <br>
+            <input type="text" id="nome" onkeyup="validaNome()">
+            <div id="txtNome"></div>
             <br>
             <label for="email">E-mail:</label> <br>
-            <input type="email" id="email">
-            <br>
+            <input type="email" id="email" onkeyup="validaEmail()">
+            <div id="txtEmail"></div>
             <br>
             <label for="text">Assunto:</label> <br>
-            <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+            <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+            <div id="txtAssunto"></div>
             <br>
-            <br>
-            <button>Enviar</button>
+            <button class="frame custom-btn btn-14" onclick="validaEnviar()">Enviar</button>
         </form>
     </div>
 
@@ -48,12 +49,14 @@
         <h2 style="color: green;">
             Endereço:
         </h2>
-            <font style="color: white;">
-                <p>Av. Paulista, 1811</p>
-                <p>São Paulo</p>
-            </font>
-            <iframe class="margem-rodape" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2219961866745!2d-46.66032854997303!3d-23.560469167368048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59dda627a4c1%3A0x5b2894a7ce278306!2sM%C3%A9qui%201000!5e0!3m2!1spt-BR!2sbr!4v1621357941631!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
+        <font style="color: white;">
+            <p>Av. Paulista, 1811</p>
+            <p>São Paulo</p>
+        </font>
+        <iframe class="margem-rodape" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2219961866745!2d-46.66032854997303!3d-23.560469167368048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59dda627a4c1%3A0x5b2894a7ce278306!2sM%C3%A9qui%201000!5e0!3m2!1spt-BR!2sbr!4v1621357941631!5m2!1spt-BR!2sbr"
+            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" id="mapa" onmousemove="zoomIn()" onmouseout="zoomOut()"></iframe>
+    </div>
+    <script src="assets/JS/script.js"></script>
 </body>
 
 <hr>
@@ -64,15 +67,15 @@
 
     <div class="container-logo">
         <a href="https://github.com/RobertoLocatelli02" target="_blank">
-        <img class="logo padding" src="assets/img/github.png" alt="Logo do github">
+            <img class="logo padding" src="assets/img/github.png" alt="Logo do github">
         </a>
-        
+
         <a href="mailto:rlocatelli02@gmail.com" target="_blank">
-        <img class="logo padding" src="assets/img/gmail.png" alt="Logo do gmail">
+            <img class="logo padding" src="assets/img/gmail.png" alt="Logo do gmail">
         </a>
 
         <a href="https://www.instagram.com/robertolocateli/" target="_blank">
-        <img class="logo padding" src="assets/img/instagram.png" alt="Logo do instagram">
+            <img class="logo padding" src="assets/img/instagram.png" alt="Logo do instagram">
         </a>
     </div>
     <div class="container-logo">
@@ -81,4 +84,5 @@
         </p>
     </div>
 </footer>
+
 </html>
